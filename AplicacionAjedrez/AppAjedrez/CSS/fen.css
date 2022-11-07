@@ -1,0 +1,95 @@
+/*CSS para pasar FEN a PNG*/
+
+:root{
+	color: #141B41;
+	background-size: cover;
+}
+
+header{
+	text-align: center;
+}
+
+#action-container{
+	z-index: 10;
+	background-color: white;
+	margin: 20px;
+	padding: 10px;
+}
+
+#searchbar{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.big-font{
+	font-size: 50px;
+}
+
+#submit-button{
+	margin-left: 20px;
+}
+
+#toolbar{
+	margin: 10px;
+}
+
+#image-display{
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+	align-items: center;
+}
+
+#download-container{
+	margin-top: 50px;
+	text-align: center;
+}
+
+#set-image-resolution{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.round-edge{
+	border-radius: 5px;
+}
+
+#checkboxes{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.fade-in{
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0; filter: blur(8px);}
+  100% {opacity:1; filter: blur(0px);}
+}
+
+#chessboard{
+	display: grid;
+	margin: 10px;
+	background-color: var(--overlay);
+	grid-template-columns: auto auto auto auto auto auto auto auto;
+	transition: 0.3s;
+  	max-width: 100%;
+  	height: auto;
+}
+
+@media only screen and (max-width: 1040px){
+	.main-layout{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		margin: auto;
+	}
+}

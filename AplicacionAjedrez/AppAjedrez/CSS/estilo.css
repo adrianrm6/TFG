@@ -1,0 +1,391 @@
+/*CSS para la página web*/
+
+input::placeholder {
+  color: #555 !important;
+}
+
+body {
+  font-size: 18px;
+  background-image: url("assets/bg.svg");
+  background-size: 100% 100%;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding-bottom: 3em;
+  min-height: 100vh;
+}
+
+form {
+  width: 65%;
+  margin: auto;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 7px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.card {
+  margin: 5px !important;
+  background-color: transparent;
+}
+
+.card-header {
+  width: 100% !important;
+  padding: 5px 5px 5px 5px !important;
+  align-self: center !important;
+  background-color: black;
+}
+
+
+/*Formularios*/
+
+.formulario > div {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.formulario input[type="checkbox"] {
+  display : none;
+  margin-top: 20px;
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 35px;
+}
+
+.formulario .checkbox label {
+  color: #127ba3;
+  background:rgba(29, 29, 29, 0.1);
+  background-color: white;
+  padding: 5px 15px;
+  display: inline-block;
+  position: relative;
+  font-size: 1em;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: block;
+  text-align: center;
+}
+
+.formulario .checkbox label:hover {
+  background: rgba(0,116,217,0.4);
+}
+
+.formulario .checkbox label:before {
+  content: "";
+  width: 17px;
+  height: 20px;
+  display: inline-block;
+  background: none;
+  border: 3px none #127ba3;
+  border-radius: 50%;
+  position: absolute;
+  left: 17px;
+  top: 5px;
+}
+
+.formulario .checkbox label:before {
+  border-radius: 3px;
+}
+
+.formulario input[type="checkbox"]:checked + label {
+  background: #127ba3;
+  color: #fff;
+}
+
+.formulario input[type="checkbox"]:checked + label:before {
+  display: none;
+}
+
+/*Footer*/
+footer{
+  background-color: #21081a; 
+  position: absolute; 
+  bottom: 0; 
+  width: 100%;
+}
+
+/*Inputs*/
+
+input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none;
+}
+
+#botonElo, #botonLenguaje {
+  margin-top: 5px !important;
+}
+
+#enviar {
+  margin-bottom: 5px;
+}
+
+
+/*Desplegable*/
+
+.content-select select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+
+/*Parte del formulario con las etiquetas*/
+
+#cardOpciones {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+
+/*Recuadros formularios e idiomas*/
+
+#langID, #opciones, #elo {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  align-items: center !important;
+  text-align: left !important;
+  width: 100% !important;
+}
+
+
+#langSelect, #formularioElo {
+  border: 3px solid green;
+  text-align: center !important;
+  display: grid !important;
+  margin-top: auto !important;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+  height: 170px !important;
+} 
+
+#divEloSel {
+  border: 3px solid green;
+  border-radius: 7px;
+  margin: 0 !important;
+  align-items: center;
+  text-align: center !important;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+  height: 170px !important;
+  font-size: 16px; 
+  color: white;
+  width: 100%;
+}
+
+#divIdiomas {
+  border: 3px solid green;
+  border-radius: 7px;
+  text-align: center !important;
+  display: grid;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+  height: 170px !important;
+  font-size: 18px;
+  width: 80%;
+}
+
+/*Botón Formularios iniciales*/
+
+.btn-success {
+  border-color: #23a127;
+  margin: auto !important;
+  width: 100%;
+}
+
+
+/*Eliminar las flechitas en el input number*/
+/*Chrome:*/
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+/*Firefox:*/
+
+input[type="number"] {
+-moz-appearance: textfield;
+}
+
+/*Other*/
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+
+/*Logo y Descripción*/
+
+#figuraUGR {
+  float: left;
+  padding:5px;
+  box-sizing: border-box;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.fotoUGR{
+  object-fit: cover;
+  width:100%;
+  height:100%;
+}
+
+#textoUGR, #instrucciones {
+  color: white;
+  text-align: center;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: auto !important;
+}
+
+
+/*Flotantes*/
+
+ul {
+  display: table;
+  justify-content: space-around;
+  list-style: none outside none; 
+  margin: 0 auto; 
+  text-align: center; 
+  padding: 3px 0; 
+  overflow: hidden;
+  margin: auto;
+}
+
+li {
+  display: flex; 
+  float: left; 
+  right: -50%; 
+  margin: 0 2%; 
+  text-align: center;
+}
+
+
+/*Pantalla pequeña*/
+
+@media only screen and (max-width: 500px){
+  #opcionesEtiquetas{
+    font-size: small;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  #textoIntroduccion{
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center;
+  }
+
+  #formulariosInicio{
+    display: block !important;
+    margin: auto;
+  }
+
+  #divIdiomas {
+    width: 100%;
+  }
+}
+
+/*Pantalla media*/
+
+@media only screen and (min-width: 800px) and (max-width: 1040px){
+  #respuestas {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  #contenedor{
+    display: inline;
+    align-items: center;
+  }
+  
+  #cardImagen{
+    float: left;
+  }
+
+  #cardOpciones{
+    width: 50%;
+  }
+
+  #opcionesEtiquetas{
+    font-size: small;
+  }
+
+  #textoIntroduccion{
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center;
+  }
+
+}
+
+/*Pantalla suficientemente grande*/
+
+@media only screen and (min-width: 1040px){
+  #respuestas {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  #contenedor{
+    display: inline;
+    align-items: center;
+  }
+  
+  #cardImagen{
+    float: left;
+  }
+
+  #cardOpciones{
+    width: 50%;
+  }
+
+  #textoIntroduccion{
+    display: block; 
+    margin-left: 2%; 
+    margin-right: 10%; 
+    text-align: center;
+  }
+
+}
+
+
+/*Cambios de pantalla para el logo*/
+
+@media only screen and (min-width: 700px) and (max-width: 992px){
+  #figuraUGR{
+    width: 60%;
+    height: 60%;
+  }
+}
+
+@media only screen and (min-width: 1500px){
+  #figuraUGR {
+    width: 60%;
+    height: 60%;
+  }
+}
+
+
