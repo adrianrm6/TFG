@@ -1018,7 +1018,7 @@ int islasPeones(const int peones[]){
 
 
 /**
- * @brief Número de falange de peones que tiene un bando en la posición
+ * @brief Número de falanges de peones que tiene un bando en la posición
  * 
  * @param posicionesPiezas casillas ocupadas por las piezas
  * @param peones array con el número de peones por columnas 
@@ -1072,15 +1072,7 @@ int falangePeones(const vector<vector<int>> & posicionesPiezas, const int peones
     return numFalanges;
 }
 
-/**
- * @brief Número de falange de peones que tiene un bando en la posición
- * 
- * @param posicionesPiezas casillas ocupadas por las piezas
- * @param peones array con el número de peones por columnas 
- * @param pieza pieza a estudiar, ya sea peón blanco o negro
- * @param falange matriz para representar con 1's y 0's las posiciones donde se encuentra la falange en el tablero
- * @return int devuelve el número de falanges de un bando en la posición
- */
+
 /**
  * @brief Número de grupos de peones conectados que tiene un bando en la posición
  * 
