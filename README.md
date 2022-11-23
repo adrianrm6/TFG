@@ -14,7 +14,7 @@ Tutores:
 En este repositorio se encuentra la memoria, la aplicación web y el software desarrollado para mi TFG. El repositorio está compuesto por los siguientes directorios:
 
 ### **Aplicacion Ajedrez**
-En este directorio se alojan la aplicación web desarrollada y su base de datos.
+En este directorio se alojan la aplicación web desarrollada y su correspondiente base de datos.
 
 ### **Redes Neuronales**
 Aquí se puede encontrar el software desarrollado para la clasificación de posiciones de ajedrez.
